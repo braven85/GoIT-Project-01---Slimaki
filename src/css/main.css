@@ -3,48 +3,6 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap");
-body {
-  font-family: "DM Sans", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.tytul {
-  color: red;
-}
-
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -53,6 +11,7 @@ Document
 /**
 Use a better box model (opinionated).
 */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap");
 *,
 ::before,
 ::after {
@@ -311,5 +270,48 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 480px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
