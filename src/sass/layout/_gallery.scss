@@ -1,0 +1,11 @@
+@import '../utils/mixins';
+
+.gallery__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__picture {
+  @include width-height(100%, 100%);
+}
