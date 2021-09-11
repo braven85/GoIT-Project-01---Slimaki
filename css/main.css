@@ -316,9 +316,78 @@ a {
 }
 
 .about {
-  display: flex;
-  background-color: #fff5f6 !important;
+  background-color: #fff5f6;
   padding-top: 125px;
   padding-bottom: 39px;
+  background-image: url("../src/images/milk.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 89%;
+}
+
+.about__label {
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.166;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.about__title {
+  color: #d41443;
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: 400l;
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 26px;
+}
+
+.about__img {
+  width: 100%;
+}
+
+.about__text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #907e82;
+  padding: 23px 30px;
+}
+
+.about__text--distinction {
+  color: #000000;
+}
+
+.btn-light {
+  background: #ffffff;
+  border-radius: 22px;
+  color: #d41443;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.285;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 17px 37px;
+  border: none;
+  margin-left: 30px;
+}
+
+.btn-light__icon {
+  stroke: #d41443;
+  margin-left: 14px;
+  margin-bottom: -2px;
 }
 /*# sourceMappingURL=main.css.map */
