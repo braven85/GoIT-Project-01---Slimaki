@@ -328,7 +328,7 @@ a {
   background: #e17992;
   right: -100%;
   transition: right 0.8s cubic-bezier(1, 0, 0, 1);
-  z-index: 2;
+  z-index: 30;
 }
 
 .change {
@@ -336,15 +336,15 @@ a {
 }
 
 .hamburger-menu {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 3;
+  z-index: 40;
 }
 
 .line {
@@ -355,7 +355,7 @@ a {
 }
 
 .hamburger-menu--opened .line-1 {
-  transform: rotateZ(-405deg) translate(-5px, 5px);
+  transform: rotateZ(-405deg) translate(-4px, 4px);
   background-color: #ffffff;
 }
 
@@ -364,7 +364,7 @@ a {
 }
 
 .hamburger-menu--opened .line-3 {
-  transform: rotateZ(405deg) translate(-6px, -6px);
+  transform: rotateZ(405deg) translate(-5px, -5px);
   background-color: #ffffff;
 }
 
@@ -376,19 +376,18 @@ a {
   line-height: 21px;
   border-radius: 22px;
   margin-top: 60px;
-  width: 209px;
+  width: 100%;
   height: 44px;
   text-align: center;
   margin-bottom: 34px;
 }
 
-.navigation__button-icon {
-  margin-left: 15.77px;
+.navigatio__button-div {
+  padding: 0 20px;
 }
 
-.navigatio__button-div {
-  display: flex;
-  justify-content: center;
+.navigation__button-icon {
+  margin-left: 15.77px;
 }
 
 .navigation__link {
@@ -412,7 +411,108 @@ a {
   color: #d41443;
 }
 
-.hero_container {
+.logo {
+  padding-top: 6px;
+}
+
+.hero__container {
+  height: 446px;
   background-color: #ffb8ca;
+  position: relative;
+}
+
+.hero__milk {
+  display: none;
+}
+
+.hero__text {
+  display: none;
+}
+
+.hero__button-text {
+  display: none;
+}
+
+.hero__right-side {
+  display: none;
+}
+
+.hero__button {
+  border: none;
+  border-radius: 20px;
+  z-index: 20;
+  bottom: 160px;
+}
+
+.hero__button-products {
+  width: 61.2px;
+  height: 24px;
+  background-color: #d41443;
+  padding-bottom: 11px;
+  position: absolute;
+  right: 237.6px;
+}
+
+.hero__button-link-products {
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+}
+
+.hero__button-how {
+  width: 82.8px;
+  height: 24px;
+  padding-bottom: 11px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 146.8px;
+}
+
+.hero__button-link-how {
+  color: #d41443;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.hero__title {
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  z-index: 20;
+  position: absolute;
+  right: 82px;
+  bottom: 203px;
+}
+
+.hero__title1 {
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero__title2 {
+  color: #d41443;
+  font-size: 48px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.hero__ice-cream-circle {
+  width: 344px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  position: absolute;
+  right: -62px;
+  bottom: 75px;
+}
+
+.hero__ice-cream-photo {
+  z-index: 10;
+  position: absolute;
+  right: 32px;
+  bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
