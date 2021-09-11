@@ -2,6 +2,10 @@
   background: $main-background-color;
 }
 
+.navigation__button-tablet {
+  display: none;
+}
+
 .navbar {
   font-family: var(--main-font);
   width: 100%;
@@ -66,7 +70,7 @@
 }
 
 .navigatio__button-div {
-padding: 0 20px;
+  padding: 0 20px;
 }
 
 .navigation__button-icon {
@@ -91,9 +95,44 @@ padding: 0 20px;
 }
 
 .navigation__link:hover {
-    color: $secondary-font-color;
+  color: $secondary-font-color;
 }
 
 .logo {
   padding-top: 6px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__container {
+    padding-top: 37px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__button-tablet {
+    display: block;
+    border: none;
+    color: $secondary-font-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 22px;
+    width: 160px;
+    height: 44px;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    margin-right: 30px;
+    position: unset;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  
 }

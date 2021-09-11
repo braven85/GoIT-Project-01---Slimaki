@@ -17,7 +17,7 @@
 }
 
 .hero__right-side {
-    display: none;
+  display: none;
 }
 
 .hero__button {
@@ -64,7 +64,6 @@
   position: absolute;
   right: 82px;
   bottom: 203px;
-  
 }
 
 .hero__title1 {
@@ -84,20 +83,125 @@
 }
 
 .hero__ice-cream-circle {
-    width: 344px;
-    height: 344px;
-    border-radius: 50%;
-    background-color: $header-circle-color;
-    position: absolute;
-    right: -62px;
-    bottom: 75px;
+  width: 344px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: $header-circle-color;
+  position: absolute;
+  right: -62px;
+  bottom: 75px;
 }
-
 
 .hero__ice-cream-photo {
-    z-index: 10;
-    position: absolute;
-    right: 32px;
-    bottom: 0;
+  z-index: 10;
+  position: absolute;
+  right: 32px;
+  bottom: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__container {
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero__title {
+    left: 34px;
+    top: 15px;
+  }
+
+  .hero__title1 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .hero__title2 {
+    font-size: 34px;
+  }
+
+  .hero__button-products {
+    left: 34px;
+  }
+
+  .hero__button-how {
+    left: 104.4px;
+  }
+
+  .hero__milk {
+    display: block;
+    position: absolute;
+    bottom: 28px;
+  }
+
+  .hero__ice-cream-circle {
+    height: 324px;
+    width: 322px;
+    top: -38px;
+    right: 137px;
+  }
+
+  .hero__ice-cream-photo {
+    right: 247px;
+  }
+
+  .hero__text {
+    display: block;
+    font-size: 8px;
+    color: $main-font-color;
+    line-height: 150%;
+    position: absolute;
+    left: 154px;
+    top: 205px;
+  }
+
+  .hero__button-text {
+    display: block;
+    border-radius: 50%;
+    border: none;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 154px;
+    top: 260px;
+  }
+
+  .hero__right-side {
+    display: block;
+  }
+
+  .hero__list-text {
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: $main-font-color;
+    position: absolute;
+    right: 42px;
+
+  }
+
+  .hero__number {
+    font-family: $secondary-font;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-font-color;
+    z-index: 30;
+    
+  
+    margin-bottom: 24px;
+  }
+
+  .circle {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $main-font-color;
+     margin-top: 12px;
+}
+
+.hero__button-icon {
+}
+}

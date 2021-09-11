@@ -313,10 +313,22 @@ a {
   max-width: 480px;
   padding: 0 20px;
   margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 34px;
+  }
 }
 
 .header__container {
   background: #ffb8ca;
+}
+
+.navigation__button-tablet {
+  display: none;
 }
 
 .navbar {
@@ -413,6 +425,35 @@ a {
 
 .logo {
   padding-top: 6px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__container {
+    padding-top: 37px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation__button-tablet {
+    display: block;
+    border: none;
+    color: #d41443;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 22px;
+    width: 160px;
+    height: 44px;
+    text-align: center;
+  }
+  .hamburger-menu {
+    margin-right: 30px;
+    position: unset;
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .hero__container {
@@ -514,5 +555,92 @@ a {
   position: absolute;
   right: 32px;
   bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__container {
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero__title {
+    left: 34px;
+    top: 15px;
+  }
+  .hero__title1 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .hero__title2 {
+    font-size: 34px;
+  }
+  .hero__button-products {
+    left: 34px;
+  }
+  .hero__button-how {
+    left: 104.4px;
+  }
+  .hero__milk {
+    display: block;
+    position: absolute;
+    bottom: 28px;
+  }
+  .hero__ice-cream-circle {
+    height: 324px;
+    width: 322px;
+    top: -38px;
+    right: 137px;
+  }
+  .hero__ice-cream-photo {
+    right: 247px;
+  }
+  .hero__text {
+    display: block;
+    font-size: 8px;
+    color: #ffffff;
+    line-height: 150%;
+    position: absolute;
+    left: 154px;
+    top: 205px;
+  }
+  .hero__button-text {
+    display: block;
+    border-radius: 50%;
+    border: none;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 154px;
+    top: 260px;
+  }
+  .hero__right-side {
+    display: block;
+  }
+  .hero__list-text {
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: #ffffff;
+    position: absolute;
+    right: 42px;
+  }
+  .hero__number {
+    font-family: "Titan One", cursive;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    z-index: 30;
+    margin-bottom: 24px;
+  }
+  .circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-top: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
