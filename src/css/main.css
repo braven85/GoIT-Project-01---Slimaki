@@ -314,4 +314,13 @@ a {
   padding: 0 20px;
   margin: 0 auto;
 }
+
+.reviews .container {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__picture {
+  padding-bottom: 29px;
+}
 /*# sourceMappingURL=main.css.map */
