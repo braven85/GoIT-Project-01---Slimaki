@@ -316,11 +316,141 @@ a {
 }
 
 .reviews .container {
+  display: block;
+}
+
+.reviews__picture {
+  margin-bottom: 29px;
+}
+
+.reviews__picture-container {
   display: flex;
   justify-content: center;
 }
 
-.reviews__picture {
-  padding-bottom: 29px;
+.reviews__icon {
+  width: 54px;
+  height: 40px;
+  fill: #E1E1E1;
+  position: relative;
+  left: 124px;
+  bottom: 114px;
+}
+
+.reviews__content {
+  display: flex;
+  justify-content: center;
+  width: 157px;
+  height: 239px;
+}
+
+.reviews__content-main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__content-container {
+  background-color: #fafafa;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+  height: 308px;
+}
+
+.reviews__content-text {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  width: 157px;
+  height: 239px;
+  flex-shrink: 0;
+  position: relative;
+  top: 0;
+  left: 65px;
+}
+
+.reviews__content-lines {
+  min-width: 180px;
+  height: 217px;
+  position: relative;
+  top: 20px;
+  left: -105px;
+  opacity: 0.5;
+}
+
+.reviews__lines {
+  width: 100%;
+  border-top: 1px solid #E1E1E1;
+  height: 29.57px;
+}
+
+.reviews__reviewers {
+  width: 172px;
+  height: 89px;
+  display: block;
+  margin-bottom: 86px;
+}
+
+.reviews__reviewers-container {
+  display: flex;
+  justify-content: center;
+}
+
+.reviewers__dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.reviewers__dot {
+  width: 4px;
+  height: 4px;
+  fill: #C7133E;
+}
+
+.reviewers__names {
+  width: 172px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.reviewers__names-data {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 86;
+  color: #000000;
+}
+
+.reviewers__pagination {
+  display: flex;
+  gap: 18px;
+  width: 72.4px;
+  height: 12px;
+}
+
+.reviewers__pagination-icon-active {
+  width: 12.4px;
+  height: 11.84px;
+  fill: #D31342;
+}
+
+.reviewers__pagination-icon {
+  width: 12px;
+  height: 12px;
+  fill: #d9d9d9;
+}
+
+.reviewers__pagination-container {
+  display: flex;
+  justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,140 @@
 .reviews {
   &__picture {
-    padding-bottom: 29px;
+    margin-bottom: 29px;
+  }
+
+  &__picture-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 54px;
+    height: 40px;
+    fill: $reviews-line;
+    position: relative;
+    left: 124px;
+    bottom: 114px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    width: 157px;
+    height: 239px;
+
+    &-main-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-container {
+      background-color: $reviews-background;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 280px;
+      height: 308px;
+    }
+
+    &-text {
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 255%;
+      text-align: center;
+      width: 157px;
+      height: 239px;
+      flex-shrink: 0;
+      position: relative;
+      top: 0;
+      left: 65px;
+    }
+
+    &-lines {
+      min-width: 180px;
+      height: 217px;
+      position: relative;
+      top: 20px;
+      left: -105px;
+      opacity: 0.5;
+    }
+  }
+
+  &__lines {
+    width: 100%;
+    border-top: 1px solid $reviews-line;
+    height: 29.57px;
+  }
+
+  &__reviewers {
+    width: 172px;
+    height: 89px;
+    display: block;
+    margin-bottom: 86px;
+  }
+
+  &__reviewers-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.reviewers {
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  &__dot {
+    width: 4px;
+    height: 4px;
+    fill: $reviewers-dot;
+  }
+
+  &__names {
+    width: 172px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &-data {
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1, 86;
+      color: $dark-font-color;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    gap: 18px;
+    width: 72.4px;
+    height: 12px;
+
+    &-icon-active {
+      width: 12.4px;
+      height: 11.84px;
+      fill: $reviewers-home;
+    }
+
+    &-icon {
+      width: 12px;
+      height: 12px;
+      fill: $reviews-dot-color;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+
   }
 }
