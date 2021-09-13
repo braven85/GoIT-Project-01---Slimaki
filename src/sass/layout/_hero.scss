@@ -82,7 +82,12 @@
   font-weight: 400;
 }
 
+
 .hero__ice-cream-circle {
+  background-image: url("./images/hero/mobile/circle.png");
+}
+
+/* .hero__ice-cream-circle {
   width: 344px;
   height: 344px;
   border-radius: 50%;
@@ -90,7 +95,7 @@
   position: absolute;
   right: -62px;
   bottom: 75px;
-}
+} */
 
 .hero__ice-cream-photo {
   z-index: 10;
