@@ -33,15 +33,18 @@
     </div>
 
     <div class="hero__ice-cream">
+      <picture>
+        <!-- <source srcset="./images/hero/desktop/img1.png" 
+        media="(min-width: 1200px)" /> -->
+        <source srcset="./images/hero/tablet/img1.png 1x, 
+        ./images/hero/tablet/img1@2x.png 2x" media="(min-width: 786px)" />
       <img src="./images/hero/mobile/img.png"
       alt="Lód rożek z 6 gałkami" 
       class="hero__ice-cream-photo"
       srcset="
-      ./images/hero/tablet/img1.png 1x,
-      ./images/hero/tablet/img1@2x.png 2x"
-      
-      sizes=" (min-width: 768px) 143px,"
+      ./images/hero/mobile/img@2x.png 2x"
       />
+      </picture>
       <div class="hero__ice-cream-circle">
       </div>
     </div>

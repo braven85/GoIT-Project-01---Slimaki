@@ -558,18 +558,15 @@ a {
 }
 
 .hero__ice-cream-circle {
-  background-image: url("./images/hero/mobile/circle.png");
-}
-
-/* .hero__ice-cream-circle {
-  width: 344px;
+  background-image: url("../images/hero/mobile/circle.png");
+  background-repeat: no-repeat;
+  width: 346px;
   height: 344px;
-  border-radius: 50%;
-  background-color: $header-circle-color;
   position: absolute;
   right: -62px;
-  bottom: 75px;
-} */
+  top: 50px;
+}
+
 .hero__ice-cream-photo {
   z-index: 10;
   position: absolute;
@@ -610,6 +607,9 @@ a {
     width: 322px;
     top: -38px;
     right: 137px;
+    border-radius: 50%;
+    background-color: #ffa5ba;
+    position: absolute;
   }
   .hero__ice-cream-photo {
     right: 247px;
