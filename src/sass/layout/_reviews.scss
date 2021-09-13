@@ -58,7 +58,6 @@
       position: relative;
       top: 20px;
       left: -105px;
-      opacity: 0.5;
     }
   }
 
@@ -82,7 +81,6 @@
 }
 
 .reviewers {
-
   &__dots {
     display: flex;
     justify-content: center;
@@ -135,6 +133,138 @@
       display: flex;
       justify-content: center;
     }
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .reviews {
+    &__content {
+      width: 620px;
+      max-height: 164px;
+      &-container {
+        max-width: 620px;
+        max-height: 164px;
+        margin-bottom: 24px;
+      }
+      &-text {
+        width: 460px;
+        height: 83px;
+        position: relative;
+        top: 30px;
+        left: 235px;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+      }
+      &-lines {
+        min-width: 524px;
+        position: relative;
+        top: 90px;
+        left: -265px;
+      }
+    }
+
+    &__lines {
+      height: 30px;
+    }
+
+    &__reviewers {
+      margin-bottom: 119px;
+    }
+
+    &__icon {
+    position: relative;
+    left: 248px;
+    bottom: 44px;
+  }
+  }
+
+  .line-8,
+  .line-7,
+  .line-6,
+  .line-5,
+  .line-4 {
+    display: none;
+  }
+
+  .reviewers {
+
+    &__dots {
+      margin-bottom: 14px;
+    }
+
+    &__names {
+    margin-bottom: 35px;
+
+      &-data {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    &__content {
+      width: 926px;
+      max-height: 350px;
+      &-container {
+        max-width: 926px;
+        max-height: 138px;
+        margin-bottom: 15px;
+      }
+      &-text {
+        width: 750px;
+        height: 52px;
+        position: relative;
+        top: 90px;
+        left: 375px;
+        font-size: 16px;
+        line-height: 1.672;
+      }
+      &-lines {
+        min-width: 810px;
+        position: relative;
+        top: 105px;
+        left: -405px;
+      }
+    }
+
+    &__lines {
+      height: 30px;
+    }
+
+    &__reviewers {
+      margin-bottom: 119px;
+    }
+
+    &__icon {
+    position: relative;
+    left: 392px;
+    bottom: 24px;
+  }
+  }
+
+  .line-8,
+  .line-7,
+  .line-6,
+  .line-5,
+  .line-4,
+  .line-3 {
+    display: none;
+  }
+
+  .reviewers {
+
+    &__dots {
+      margin-bottom: 15px;
+    }
+
+    &__names {
+    margin-bottom: 35px;
+
+      &-data {
+        font-size: 16px;
+      }
+    }
   }
 }
