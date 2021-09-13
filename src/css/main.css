@@ -403,13 +403,17 @@ a {
   margin-bottom: 34px;
 }
 
-.navigatio__button-div {
+.navigation__button:focus {
+  background-color: #ecebeb;
+}
+
+.navigation__button-div {
   padding: 0 20px;
 }
 
 .navigation__button-icon {
   margin-left: 15.77px;
-  fill: #d41443;
+  stroke: #d41443;
 }
 
 .navigation__link {
@@ -437,7 +441,7 @@ a {
   padding-top: 6px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .header__container {
     padding-top: 37px;
     display: flex;
@@ -473,10 +477,47 @@ a {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .header__container {
+    height: 100%;
+    display: flex;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .navbar {
+    position: static;
+    background: none;
+    transition: 0;
+    display: flex;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .navigation__list {
+    display: flex;
+  }
+  .navigation__item {
+    border: none;
+  }
+  .navigation__button-tablet {
+    display: none;
+  }
+  .navigation__button-div {
+    width: 160px;
+    height: 44px;
+    text-align: center;
+    padding: 0 0;
+    margin-top: -50px;
+  }
+}
+
 .hero__container {
   height: 446px;
   background-color: #ffb8ca;
   position: relative;
+  width: 100%;
 }
 
 .hero__milk {
@@ -563,18 +604,16 @@ a {
   width: 346px;
   height: 344px;
   position: absolute;
-  right: -62px;
+  right: 50%;
   top: 50px;
 }
 
 .hero__ice-cream-photo {
   z-index: 10;
   position: absolute;
-  right: 32px;
-  bottom: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero__container {
     height: 312px;
     display: flex;
@@ -701,6 +740,140 @@ a {
   .hero__lady {
     position: absolute;
     top: 184px;
+    right: 34px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    height: 594px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero__title {
+    left: 115px;
+    top: 84px;
+  }
+  .hero__title1 {
+    font-size: 38px;
+    line-height: 25px;
+  }
+  .hero__title2 {
+    font-size: 58px;
+  }
+  .hero__button-products {
+    left: 115px;
+    bottom: 292px;
+    width: 104px;
+    height: 40px;
+  }
+  .hero__button-how {
+    left: 234px;
+    bottom: 292px;
+  }
+  .hero__milk {
+    display: block;
+    position: absolute;
+    bottom: 28px;
+  }
+  .hero__ice-cream-circle {
+    height: 538px;
+    width: 538px;
+    top: -12px;
+    right: 276px;
+    border-radius: 50%;
+    background-color: #ffa5ba;
+    position: absolute;
+  }
+  .hero__text {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 140%;
+    position: absolute;
+    left: 295px;
+    bottom: 102px;
+  }
+  .hero__button-text {
+    display: block;
+    border-radius: 50%;
+    border: none;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 295px;
+    bottom: 56px;
+  }
+  .hero__button-icon {
+    fill: #d41443;
+    width: 10px;
+    height: 10px;
+  }
+  .hero__ice-cream-photo {
+    right: 300px;
+  }
+  .hero__right-side {
+    display: block;
+  }
+  .hero__list-text {
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: #ffffff;
+    position: absolute;
+    right: 42px;
+  }
+  .hero__number {
+    font-family: "Titan One", cursive;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    z-index: 30;
+    margin-bottom: 24px;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-top: 78px;
+  }
+  .dot1 {
+    position: absolute;
+    top: 12px;
+    right: 34px;
+  }
+  .number1 {
+    position: absolute;
+    top: 26px;
+    right: 43px;
+  }
+  .text1 {
+    position: absolute;
+    top: 58px;
+    right: 44px;
+  }
+  .dot2 {
+    position: absolute;
+    top: 69px;
+    right: 34px;
+  }
+  .number2 {
+    position: absolute;
+    top: 82px;
+    right: 42px;
+  }
+  .text2 {
+    position: absolute;
+    top: 115px;
+    right: 42px;
+  }
+  .hero__lady {
+    position: absolute;
+    bottom: 0px;
     right: 34px;
   }
 }

@@ -16,8 +16,19 @@
       <button class="hero__button hero__button-how" type="button">
         <a href="#" class="hero__button-link-how">How it’s made?</a>
       </button>
+      <picture>
+        <!-- <source srcset="./images/hero/deskto/img.png 1x, 
+        ./images/hero/desktop/img@2x.png 2x" media="(min-width: 1200px)" /> -->
 
-      <img src="/images/hero/tablet/img.png" alt="Dzban mleka" class="hero__milk" />
+        <img
+          src="./images/hero/tablet/img.png"
+          alt="Dzban mleka"
+          class="hero__milk"
+          srcset="
+      /images/hero/tablet/img.png 1x,
+      ./images/hero/tablet/img@2x.png x2"
+        />
+      </picture>
       <p class="hero__text">
         Lorem ipsum dolor sit amet, <br />
         consectetur adipiscing elit, <br />
@@ -26,27 +37,25 @@
       </p>
 
       <button class="hero__button-text" type="button">
-        <svg class="hero__button-icon" > 
-        <use href="./images/icons.svg#icon-arrow-right2"></use>
+        <svg class="hero__button-icon">
+          <use href="./images/icons.svg#icon-arrow-right2"></use>
         </svg>
       </button>
     </div>
 
     <div class="hero__ice-cream">
       <picture>
-        <!-- <source srcset="./images/hero/desktop/img1.png" 
-        media="(min-width: 1200px)" /> -->
+         <source srcset="./images/hero/desktop/img1.png" 
+        media="(min-width: 1280px)" /> 
         <source srcset="./images/hero/tablet/img1.png 1x, 
-        ./images/hero/tablet/img1@2x.png 2x" media="(min-width: 786px)" />
-      <img src="./images/hero/mobile/img.png"
-      alt="Lód rożek z 6 gałkami" 
-      class="hero__ice-cream-photo"
-      srcset="
-      ./images/hero/mobile/img@2x.png 2x"
-      />
+        ./images/hero/tablet/img1@2x.png 2x"
+         media="(min-width: 768px)" />
+        <img src="./images/hero/mobile/img.png" 
+        alt="Lód rożek z 6 gałkami" 
+        class="hero__ice-cream-photo" 
+        srcset="./images/hero/mobile/img@2x.png 2x" />
       </picture>
-      <div class="hero__ice-cream-circle">
-      </div>
+      <div class="hero__ice-cream-circle"></div>
     </div>
 
     <div class="hero__right-side">
@@ -68,20 +77,17 @@
         </li>
       </ul>
 
-    
-      <img 
-      src="./images/hero/tablet/img2.png" 
-      alt="Kobieta jedząca loda"
-       class="hero__lady" 
+      <picture>
 
-       srcset="
-       ./images/hero/tablet/img2.png 1x,
-       ./images/hero/tablet/img2@2x.png 2x
-       "
-       width="168px"
-
-       />
-       
+         <source srcset="./images/hero/desktop/img2.png" media="(min-width: 1280px)" /> 
+        <img
+          src="./images/hero/tablet/img2.png"
+          alt="Kobieta jedząca loda"
+          class="hero__lady"
+          srcset="./images/hero/tablet/img2.png 1x, 
+          ./images/hero/tablet/img2@2x.png 2x"
+        />
+      </picture>
     </div>
   </div>
 </section>

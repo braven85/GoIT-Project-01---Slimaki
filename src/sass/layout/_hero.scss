@@ -2,6 +2,7 @@
   height: 446px;
   background-color: #ffb8ca;
   position: relative;
+  width: 100%;
 }
 
 .hero__milk {
@@ -82,28 +83,24 @@
   font-weight: 400;
 }
 
-
 .hero__ice-cream-circle {
   background-image: url("../images/hero/mobile/circle.png");
   background-repeat: no-repeat;
   width: 346px;
   height: 344px;
   position: absolute;
-  right: -62px;
+  right: 50%;
   top: 50px;
  
   
 }
 
-
 .hero__ice-cream-photo {
   z-index: 10;
   position: absolute;
-  right: 32px;
-  bottom: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero__container {
     height: 312px;
     display: flex;
@@ -196,7 +193,6 @@
     text-transform: uppercase;
     color: $secondary-font-color;
     z-index: 30;
-
     margin-bottom: 24px;
   }
 
@@ -256,4 +252,162 @@
     top: 184px;
     right: 34px;
   }
+}
+
+@media screen and (min-width: 1280px) {
+
+.hero__container {
+    height: 594px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.hero__title {
+    left: 115px;
+    top: 84px;
+  }
+
+.hero__title1 {
+    font-size: 38px;
+    line-height: 25px;
+  }
+
+  .hero__title2 {
+    font-size: 58px;
+  }
+
+.hero__button-products {
+    left: 115px;
+    bottom: 292px;
+    width: 104px;
+    height: 40px;
+  }
+
+  .hero__button-how {
+    left: 234px;
+    bottom: 292px;
+  }
+
+.hero__milk {
+    display: block;
+    position: absolute;
+    bottom: 28px;
+  }
+
+ .hero__ice-cream-circle {
+    height: 538px;
+    width: 538px;
+    top: -12px;
+    right: 276px;
+  border-radius: 50%;
+  background-color: $header-circle-color;
+  position: absolute;
+} 
+
+.hero__text {
+    display: block;
+    font-size: 14px;
+    color: $main-font-color;
+    line-height: 140%;
+    position: absolute;
+    left: 295px;
+    bottom: 102px;
+  }
+
+  .hero__button-text {
+    display: block;
+    border-radius: 50%;
+    border: none;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 295px;
+    bottom: 56px;
+  }
+
+  .hero__button-icon {
+    fill: $secondary-font-color;
+    width: 10px;
+    height: 10px;
+  }
+
+.hero__ice-cream-photo {
+    right: 300px;
+  }
+
+.hero__right-side {
+    display: block;
+  }
+
+  .hero__list-text {
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: $main-font-color;
+    position: absolute;
+    right: 42px;
+  }
+
+   .hero__number {
+    font-family: $secondary-font;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-font-color;
+    z-index: 30;
+    margin-bottom: 24px;
+  }
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $main-font-color;
+    margin-top: 78px;
+  }
+
+.dot1 {
+    position: absolute;
+    top: 12px;
+    right: 34px;
+  }
+
+  .number1 {
+    position: absolute;
+    top: 26px;
+    right: 43px;
+  }
+
+  .text1 {
+    position: absolute;
+    top: 58px;
+    right: 44px;
+  }
+
+  .dot2 {
+    position: absolute;
+    top: 69px;
+    right: 34px;
+  }
+
+  .number2 {
+    position: absolute;
+    top: 82px;
+    right: 42px;
+  }
+
+  .text2 {
+    position: absolute;
+    top: 115px;
+    right: 42px;
+  }
+
+  .hero__lady {
+    position: absolute;
+    bottom: 0px;
+    right: 34px;
+  }
+
 }
