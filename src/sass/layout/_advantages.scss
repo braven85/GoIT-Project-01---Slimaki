@@ -1,0 +1,27 @@
+.advantages {
+  background-color: $third-background-color;
+
+  &__title {
+    visibility: hidden;
+  }
+
+  &__number {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-font-color;
+  }
+
+  &__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.66;
+    color: $dark-font-color;
+  }
+}
