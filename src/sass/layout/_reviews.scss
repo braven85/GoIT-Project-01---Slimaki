@@ -201,3 +201,70 @@
     }
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    &__content {
+      width: 926px;
+      max-height: 350px;
+      &-container {
+        max-width: 926px;
+        max-height: 138px;
+        margin-bottom: 15px;
+      }
+      &-text {
+        width: 750px;
+        height: 52px;
+        position: relative;
+        top: 90px;
+        left: 375px;
+        font-size: 16px;
+        line-height: 1.672;
+      }
+      &-lines {
+        min-width: 810px;
+        position: relative;
+        top: 105px;
+        left: -405px;
+      }
+    }
+
+    &__lines {
+      height: 30px;
+    }
+
+    &__reviewers {
+      margin-bottom: 119px;
+    }
+
+    &__icon {
+    position: relative;
+    left: 392px;
+    bottom: 24px;
+  }
+  }
+
+  .line-8,
+  .line-7,
+  .line-6,
+  .line-5,
+  .line-4,
+  .line-3 {
+    display: none;
+  }
+
+  .reviewers {
+
+    &__dots {
+      margin-bottom: 15px;
+    }
+
+    &__names {
+    margin-bottom: 35px;
+
+      &-data {
+        font-size: 16px;
+      }
+    }
+  }
+}
