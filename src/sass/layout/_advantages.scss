@@ -1,0 +1,28 @@
+.advantages {
+  background-color: $third-background-color;
+
+  &__title {
+    visibility: hidden;
+  }
+
+  &__list {
+      display: flex;
+      flex-direction: column;
+  }
+
+  &__number {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-font-color;
+  }
+
+  &__number::before {
+    background-image: url('../images/milk-icon.png');
+    background-repeat: no-repeat;
+  }
+}
