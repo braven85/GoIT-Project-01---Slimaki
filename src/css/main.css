@@ -365,7 +365,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 40;
+  z-index: 50;
 }
 
 .line {
@@ -409,6 +409,7 @@ a {
 
 .navigation__button-icon {
   margin-left: 15.77px;
+  fill: #d41443;
 }
 
 .navigation__link {
@@ -462,6 +463,13 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .navbar {
+    width: 254px;
+    z-index: 40;
+  }
+  .hamburger-menu--opened {
+    transform: translateX(200px) translateY(-30px);
   }
 }
 
@@ -568,7 +576,7 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__container {
-    height: 320px;
+    height: 312px;
     display: flex;
     justify-content: space-between;
   }
@@ -650,6 +658,47 @@ a {
     border-radius: 50%;
     background-color: #ffffff;
     margin-top: 12px;
+  }
+  .dot1 {
+    position: absolute;
+    top: 12px;
+    right: 34px;
+  }
+  .number1 {
+    position: absolute;
+    top: 26px;
+    right: 43px;
+  }
+  .text1 {
+    position: absolute;
+    top: 58px;
+    right: 44px;
+  }
+  .dot2 {
+    position: absolute;
+    top: 69px;
+    right: 34px;
+  }
+  .number2 {
+    position: absolute;
+    top: 82px;
+    right: 42px;
+  }
+  .text2 {
+    position: absolute;
+    top: 115px;
+    right: 42px;
+  }
+  .hero__button-icon {
+    fill: #d41443;
+    width: 6px;
+    height: 6px;
+    display: flex;
+  }
+  .hero__lady {
+    position: absolute;
+    top: 184px;
+    right: 34px;
   }
 }
 

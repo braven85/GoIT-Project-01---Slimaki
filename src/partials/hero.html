@@ -26,14 +26,22 @@
       </p>
 
       <button class="hero__button-text" type="button">
-        <svg class="hero__button-icon" width="10" height="5"> 
-        <use href=""></use>
+        <svg class="hero__button-icon" > 
+        <use href="./images/icons.svg#icon-arrow-right2"></use>
         </svg>
       </button>
     </div>
 
     <div class="hero__ice-cream">
-      <img src="./images/hero/mobile/img.png" alt="Lód rożek z 6 gałkami" class="hero__ice-cream-photo" />
+      <img src="./images/hero/mobile/img.png"
+      alt="Lód rożek z 6 gałkami" 
+      class="hero__ice-cream-photo"
+      srcset="
+      ./images/hero/tablet/img1.png 1x,
+      ./images/hero/tablet/img1@2x.png 2x"
+      
+      sizes=" (min-width: 768px) 143px,"
+      />
       <div class="hero__ice-cream-circle"></div>
     </div>
 
@@ -41,22 +49,35 @@
       <ul class="hero__list">
         <li class="hero__list-item">
           <ul class="hero__list-inside">
-            <li class="hero__list-inside-item circle"></li>
-            <li class="hero__list-inside-item hero__number">16</li>
-            <li class="hero__list-inside-item hero__list-text">cafes</li>
+            <li class="hero__list-inside-item circle dot1"></li>
+            <li class="hero__list-inside-item hero__number number1">16</li>
+            <li class="hero__list-inside-item hero__list-text text1">cafes</li>
           </ul>
         </li>
 
         <li class="hero__list-item">
           <ul class="hero__list-inside">
-            <li class="hero__list-inside-item circle"></li>
-            <li class="hero__list-inside-item hero__number">23</li>
-            <li class="hero__list-inside-item hero__list-text">food trucks</li>
+            <li class="hero__list-inside-item circle dot2"></li>
+            <li class="hero__list-inside-item hero__number number2">23</li>
+            <li class="hero__list-inside-item hero__list-text text2">food trucks</li>
           </ul>
         </li>
       </ul>
 
-      <img src="" alt="" class="hero__lady" />
+    
+      <img 
+      src="./images/hero/tablet/img2.png" 
+      alt="Kobieta jedząca loda"
+       class="hero__lady" 
+
+       srcset="
+       ./images/hero/tablet/img2.png 1x,
+       ./images/hero/tablet/img2@2x.png 2x
+       "
+       width="168px"
+
+       />
+       
     </div>
   </div>
 </section>

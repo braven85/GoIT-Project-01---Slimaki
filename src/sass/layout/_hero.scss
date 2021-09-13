@@ -101,7 +101,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__container {
-    height: 320px;
+    height: 312px;
     display: flex;
     justify-content: space-between;
   }
@@ -177,7 +177,6 @@
     color: $main-font-color;
     position: absolute;
     right: 42px;
-
   }
 
   .hero__number {
@@ -189,19 +188,64 @@
     text-transform: uppercase;
     color: $secondary-font-color;
     z-index: 30;
-    
-  
+
     margin-bottom: 24px;
   }
 
   .circle {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: $main-font-color;
-     margin-top: 12px;
-}
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $main-font-color;
+    margin-top: 12px;
+  }
 
-.hero__button-icon {
-}
+  .dot1 {
+    position: absolute;
+    top: 12px;
+    right: 34px;
+  }
+
+  .number1 {
+    position: absolute;
+    top: 26px;
+    right: 43px;
+  }
+
+  .text1 {
+    position: absolute;
+    top: 58px;
+    right: 44px;
+  }
+
+  .dot2 {
+    position: absolute;
+    top: 69px;
+    right: 34px;
+  }
+
+  .number2 {
+    position: absolute;
+    top: 82px;
+    right: 42px;
+  }
+
+  .text2 {
+    position: absolute;
+    top: 115px;
+    right: 42px;
+  }
+
+  .hero__button-icon {
+    fill: $secondary-font-color;
+    width: 6px;
+    height: 6px;
+    display: flex;
+  }
+
+  .hero__lady {
+    position: absolute;
+    top: 184px;
+    right: 34px;
+  }
 }
