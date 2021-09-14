@@ -672,7 +672,7 @@ a {
 .about {
   background-color: #fff5f6;
   padding-top: 125px;
-  padding-bottom: 39px;
+  padding-bottom: 11.8px;
   background-image: url("../images/milk.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -711,10 +711,70 @@ a {
   font-size: 12px;
   line-height: 1.58;
   color: #907e82;
-  padding: 23px 30px;
+  padding: 23px 30px 0px;
 }
 .about__text--distinction {
   color: #000000;
+}
+
+.advantages {
+  background-color: #fff5f6;
+}
+
+.advantages__title {
+  visibility: hidden;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+.advantages__number {
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.advantages__number::before {
+  display: block;
+  content: '';
+  margin-bottom: 16px;
+}
+
+.advantages__number--milk::before {
+  width: 33px;
+  height: 50px;
+  background-image: url("../images/advantages/milk-icon.png");
+}
+
+.advantages__number--fruits::before {
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/advantages/fruits-icon.png");
+}
+
+.advantages__number--heart::before {
+  width: 44px;
+  height: 50px;
+  background-image: url("../images/advantages/heart-icon.png");
+}
+
+.advantages__text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+  color: #000000;
+  margin-bottom: 38px;
+  margin-top: 20px;
 }
 
 .gallery {

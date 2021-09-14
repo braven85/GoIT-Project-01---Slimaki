@@ -6,8 +6,9 @@
   }
 
   &__list {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
   }
 
   &__number {
@@ -22,7 +23,37 @@
   }
 
   &__number::before {
-    background-image: url('../images/milk-icon.png');
-    background-repeat: no-repeat;
+    display: block;
+    content: '';
+    margin-bottom: 16px;
+  }
+
+  &__number--milk::before {
+    width: 33px;
+    height: 50px;
+    background-image: url('../images/advantages/milk-icon.png');
+  }
+
+  &__number--fruits::before {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/advantages/fruits-icon.png');
+  }
+
+  &__number--heart::before {
+    width: 44px;
+    height: 50px;
+    background-image: url('../images/advantages/heart-icon.png');
+  }
+
+  &__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.66;
+    color: $dark-font-color;
+    margin-bottom: 38px;
+    margin-top: 20px;
   }
 }
