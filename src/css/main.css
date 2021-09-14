@@ -328,12 +328,11 @@ a {
   .container {
     padding-left: 115px;
     padding-right: 115px;
-    width: 1280px;
   }
 }
 
 .header__container {
-  background: #ffb8ca;
+  background-color: #ffb8ca;
 }
 
 .navigation__button-tablet {
@@ -401,8 +400,10 @@ a {
   height: 44px;
   text-align: center;
   margin-bottom: 34px;
+  background-color: #ffffff;
 }
 
+.navigation__button:hover,
 .navigation__button:focus {
   background-color: #ecebeb;
 }
@@ -443,7 +444,7 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .header__container {
-    padding-top: 37px;
+    padding-top: 38px;
     display: flex;
     justify-content: space-between;
   }
@@ -458,6 +459,11 @@ a {
     width: 160px;
     height: 44px;
     text-align: center;
+    background-color: #ffffff;
+  }
+  .navigation__button-tablet:hover,
+  .navigation__button-tablet:focus {
+    background-color: #ecebeb;
   }
   .hamburger-menu {
     margin-right: 30px;
@@ -475,21 +481,29 @@ a {
   .hamburger-menu--opened {
     transform: translateX(200px) translateY(-30px);
   }
+  .logo {
+    padding-top: 0;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .header__container {
-    height: 100%;
+    padding-top: 38px;
     display: flex;
+    height: 87px;
+    padding-left: 46px;
+    padding-right: 115px;
   }
   .hamburger-menu {
     display: none;
+  }
+  .logo {
+    padding-top: 0;
   }
   .navbar {
     position: static;
     background: none;
     transition: 0;
-    display: flex;
   }
   .navigation {
     display: flex;
@@ -497,19 +511,36 @@ a {
   }
   .navigation__list {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .navigation__item {
     border: none;
+    padding: 0 0;
   }
   .navigation__button-tablet {
     display: none;
   }
-  .navigation__button-div {
-    width: 160px;
+  .navigation__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .navigation__button {
+    margin-top: 0;
+    width: 159px;
     height: 44px;
-    text-align: center;
     padding: 0 0;
-    margin-top: -50px;
+    margin-bottom: 0;
+  }
+  .navigation__button-div {
+    padding: 0 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+  .navigation__item:nth-child(5) {
+    border-bottom: none;
   }
 }
 
@@ -517,7 +548,7 @@ a {
   height: 446px;
   background-color: #ffb8ca;
   position: relative;
-  width: 100%;
+  display: flex;
 }
 
 .hero__milk {
@@ -541,15 +572,25 @@ a {
   border-radius: 20px;
   z-index: 20;
   bottom: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__button-products {
   width: 61.2px;
   height: 24px;
   background-color: #d41443;
-  padding-bottom: 11px;
   position: absolute;
-  right: 237.6px;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 160px;
+  margin-left: -120px;
+}
+
+.hero__button-products:hover,
+.hero__button-products:focus {
+  background-color: #c7133e;
 }
 
 .hero__button-link-products {
@@ -561,10 +602,17 @@ a {
 .hero__button-how {
   width: 82.8px;
   height: 24px;
-  padding-bottom: 11px;
   background-color: #ffffff;
   position: absolute;
-  right: 146.8px;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 160px;
+  margin-left: -50px;
+}
+
+.hero__button-how:hover,
+.hero__button-how:focus {
+  background-color: #ecebeb;
 }
 
 .hero__button-link-how {
@@ -578,8 +626,10 @@ a {
   font-weight: 400;
   z-index: 20;
   position: absolute;
-  right: 82px;
-  bottom: 203px;
+  left: 50%;
+  bottom: 0;
+  margin-left: -120px;
+  margin-bottom: 203px;
 }
 
 .hero__title1 {
@@ -599,18 +649,22 @@ a {
 }
 
 .hero__ice-cream-circle {
-  background-image: url("../images/hero/mobile/circle.png");
-  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: #ffa5ba;
   width: 346px;
   height: 344px;
   position: absolute;
-  right: 50%;
-  top: 50px;
+  left: 50%;
+  bottom: 0;
+  margin-bottom: 75px;
+  margin-left: -100px;
 }
 
 .hero__ice-cream-photo {
   z-index: 10;
   position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -620,8 +674,7 @@ a {
     justify-content: space-between;
   }
   .hero__title {
-    left: 34px;
-    top: 15px;
+    left: 155px;
   }
   .hero__title1 {
     font-size: 22px;
@@ -631,10 +684,10 @@ a {
     font-size: 34px;
   }
   .hero__button-products {
-    left: 34px;
+    left: 155px;
   }
   .hero__button-how {
-    left: 104.4px;
+    left: 152px;
   }
   .hero__milk {
     display: block;
@@ -644,11 +697,11 @@ a {
   .hero__ice-cream-circle {
     height: 324px;
     width: 322px;
-    top: -38px;
-    right: 137px;
+    bottom: -38px;
     border-radius: 50%;
     background-color: #ffa5ba;
     position: absolute;
+    margin-left: -70px;
   }
   .hero__ice-cream-photo {
     right: 247px;
@@ -671,6 +724,7 @@ a {
     position: absolute;
     left: 154px;
     top: 260px;
+    background-color: #ffffff;
   }
   .hero__right-side {
     display: block;
@@ -746,44 +800,53 @@ a {
 
 @media screen and (min-width: 1280px) {
   .hero__container {
-    height: 594px;
+    height: 578px;
     display: flex;
     justify-content: space-between;
   }
   .hero__title {
-    left: 115px;
     top: 84px;
+    left: 115px;
+    margin-left: 0;
   }
   .hero__title1 {
     font-size: 38px;
     line-height: 25px;
+    line-height: 43.51px;
   }
   .hero__title2 {
     font-size: 58px;
+    line-height: 52.49px;
+  }
+  .hero__button {
+    margin-left: 0;
+    margin-bottom: 0;
+    bottom: 292px;
+    height: 40px;
   }
   .hero__button-products {
     left: 115px;
-    bottom: 292px;
     width: 104px;
-    height: 40px;
+  }
+  .hero__button-link-products,
+  .hero__button-link-how {
+    font-size: 14px;
   }
   .hero__button-how {
+    width: 138px;
     left: 234px;
-    bottom: 292px;
   }
   .hero__milk {
     display: block;
     position: absolute;
-    bottom: 28px;
+    bottom: 45px;
+    left: 77px;
   }
   .hero__ice-cream-circle {
     height: 538px;
     width: 538px;
-    top: -12px;
-    right: 276px;
-    border-radius: 50%;
-    background-color: #ffa5ba;
-    position: absolute;
+    left: 465px;
+    margin-left: 10px;
   }
   .hero__text {
     display: block;
@@ -803,6 +866,7 @@ a {
     position: absolute;
     left: 295px;
     bottom: 56px;
+    background-color: #ffffff;
   }
   .hero__button-icon {
     fill: #d41443;
@@ -810,14 +874,14 @@ a {
     height: 10px;
   }
   .hero__ice-cream-photo {
-    right: 300px;
+    margin-left: -50px;
   }
   .hero__right-side {
     display: block;
   }
   .hero__list-text {
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 14px;
+    line-height: 18px;
     text-align: right;
     color: #ffffff;
     position: absolute;
@@ -825,56 +889,56 @@ a {
   }
   .hero__number {
     font-family: "Titan One", cursive;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 46px;
+    line-height: 53px;
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
     z-index: 30;
-    margin-bottom: 24px;
+    margin-bottom: 38px;
   }
   .circle {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #ffffff;
-    margin-top: 78px;
+    margin-top: 74px;
   }
   .dot1 {
     position: absolute;
-    top: 12px;
-    right: 34px;
+    top: 1px;
+    right: 97px;
   }
   .number1 {
     position: absolute;
-    top: 26px;
-    right: 43px;
+    top: 78px;
+    right: 115px;
   }
   .text1 {
     position: absolute;
-    top: 58px;
-    right: 44px;
+    top: 133px;
+    right: 115px;
   }
   .dot2 {
     position: absolute;
-    top: 69px;
-    right: 34px;
+    top: 93px;
+    right: 97px;
   }
   .number2 {
     position: absolute;
-    top: 82px;
-    right: 42px;
+    top: 169px;
+    right: 115px;
   }
   .text2 {
     position: absolute;
-    top: 115px;
-    right: 42px;
+    top: 224px;
+    right: 115px;
   }
   .hero__lady {
     position: absolute;
     bottom: 0px;
-    right: 34px;
+    right: 109px;
   }
 }
 
