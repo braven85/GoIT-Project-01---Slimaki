@@ -27,8 +27,8 @@
   z-index: 20;
   bottom: 160px;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__button-products {
@@ -103,22 +103,16 @@
 }
 
 .hero__ice-cream-circle {
-  border-radius: 50%;
-  background-color: $header-circle-color;
-  width: 346px;
-  height: 344px;
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  margin-bottom: 75px;
-  margin-left: -100px;
+  right: 0;
+  bottom: 75px;
 }
 
 .hero__ice-cream-photo {
   z-index: 10;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: 32px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -155,14 +149,18 @@
     bottom: 28px;
   }
 
+  .hero__circle {
+    display: none;
+  }
+
   .hero__ice-cream-circle {
+    right: 142px;
+    bottom: 46px;
     height: 324px;
     width: 322px;
-    bottom: -38px;
     border-radius: 50%;
     background-color: $header-circle-color;
     position: absolute;
-    margin-left: -70px;
   }
 
   .hero__ice-cream-photo {
@@ -273,8 +271,6 @@
   }
 }
 
-
-
 @media screen and (min-width: 1280px) {
   .hero__container {
     height: 578px;
@@ -299,7 +295,7 @@
     line-height: 52.49px;
   }
 
-  .hero__button{
+  .hero__button {
     margin-left: 0;
     margin-bottom: 0;
     bottom: 292px;
@@ -309,7 +305,6 @@
   .hero__button-products {
     left: 115px;
     width: 104px;
-    
   }
 
   .hero__button-link-products,
@@ -329,12 +324,18 @@
     left: 77px;
   }
 
+  .hero__circle {
+    display: none;
+  }
+
   .hero__ice-cream-circle {
     height: 538px;
     width: 538px;
     left: 465px;
-   margin-left: 10px;
-   
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: $header-circle-color;
+    position: absolute;
   }
 
   .hero__text {
@@ -366,7 +367,7 @@
   }
 
   .hero__ice-cream-photo {
-    margin-left: -50px;
+    right: 405px;
   }
 
   .hero__right-side {
@@ -413,7 +414,6 @@
     top: 78px;
     right: 115px;
   }
-
 
   .text1 {
     position: absolute;

@@ -518,19 +518,18 @@ a {
   .navigation__list {
     display: flex;
     margin-right: 110px;
+    gap: 35px;
   }
   .navigation__link {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
+    padding-left: 0;
   }
   .navigation__button {
     margin-bottom: 0;
     margin-top: 0;
     width: 160px;
-  }
-  .navigation__link:not(:last-child) {
-    padding-right: 35px;
   }
   .navigation__item {
     border: none;
@@ -645,22 +644,16 @@ a {
 }
 
 .hero__ice-cream-circle {
-  border-radius: 50%;
-  background-color: #ffa5ba;
-  width: 346px;
-  height: 344px;
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  margin-bottom: 75px;
-  margin-left: -100px;
+  right: 0;
+  bottom: 75px;
 }
 
 .hero__ice-cream-photo {
   z-index: 10;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: 32px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -690,14 +683,17 @@ a {
     position: absolute;
     bottom: 28px;
   }
+  .hero__circle {
+    display: none;
+  }
   .hero__ice-cream-circle {
+    right: 142px;
+    bottom: 46px;
     height: 324px;
     width: 322px;
-    bottom: -38px;
     border-radius: 50%;
     background-color: #ffa5ba;
     position: absolute;
-    margin-left: -70px;
   }
   .hero__ice-cream-photo {
     right: 247px;
@@ -837,11 +833,17 @@ a {
     bottom: 45px;
     left: 77px;
   }
+  .hero__circle {
+    display: none;
+  }
   .hero__ice-cream-circle {
     height: 538px;
     width: 538px;
     left: 465px;
     margin-left: 10px;
+    border-radius: 50%;
+    background-color: #ffa5ba;
+    position: absolute;
   }
   .hero__text {
     display: block;
@@ -869,7 +871,7 @@ a {
     height: 10px;
   }
   .hero__ice-cream-photo {
-    margin-left: -50px;
+    right: 405px;
   }
   .hero__right-side {
     display: block;
