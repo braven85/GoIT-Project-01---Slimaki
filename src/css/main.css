@@ -660,7 +660,7 @@ a {
 .about {
   background-color: #fff5f6;
   padding-top: 125px;
-  padding-bottom: 39px;
+  padding-bottom: 11.8px;
   background-image: url("../images/milk.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -703,7 +703,7 @@ a {
   font-size: 12px;
   line-height: 1.58;
   color: #907e82;
-  padding: 23px 30px;
+  padding: 23px 30px 0px;
 }
 
 .about__text--distinction {
