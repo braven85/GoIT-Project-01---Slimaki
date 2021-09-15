@@ -661,10 +661,6 @@ a {
   background-color: #fff5f6;
   padding-top: 125px;
   padding-bottom: 39px;
-  background-image: url("../images/milk.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: 89%;
 }
 
 .about__label {
@@ -703,11 +699,80 @@ a {
   font-size: 12px;
   line-height: 1.58;
   color: #907e82;
-  padding: 23px 30px;
 }
 
 .about__text--distinction {
   color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    background-image: url("../images/about/milk_mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 89%;
+  }
+  .about__text {
+    padding: 23px 30px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .about {
+    background-image: url("../images/about/milk_mobile@2x.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+  .about__label {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+  .about__title {
+    font-size: 48px;
+    line-height: 1.146;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: row;
+  }
+  .about__img {
+    align-items: center;
+  }
+  .about__text-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 1.786;
+    margin-bottom: 49px;
+    margin-left: 17px;
+  }
+  .about__text--distinction {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: url("../images/about/milk_desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .about {
+    background-image: url("../images/about/milk_desktop@2x.png");
+  }
 }
 
 .advantages {
@@ -768,6 +833,26 @@ a {
   color: #000000;
   margin-bottom: 38px;
   margin-top: 20px;
+}
+
+.advantages__text--last {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    flex-direction: row;
+    padding-right: 42px;
+  }
+  .advantages__item {
+    padding-right: 20px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 60px;
+  }
+  .advantages__text {
+    margin-bottom: 0px;
+  }
 }
 
 .gallery {
@@ -1670,5 +1755,21 @@ a {
   stroke: #d41443;
   margin-left: 14px;
   margin-bottom: -2px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-light {
+    font-size: 16px;
+    line-height: 1.312;
+    margin-left: 0px;
+    align-items: flex-start;
+    max-width: 179px;
+    position: relative;
+  }
+  .btn-light__icon {
+    position: absolute;
+    top: 40%;
+    left: 67%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
