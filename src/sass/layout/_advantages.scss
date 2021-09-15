@@ -64,15 +64,23 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
-
     &__list {
       flex-direction: row;
       padding-right: 42px;
-      
+    }
+
+    &__number {
+      font-size: 48px;
+      line-height: 1.146;
+      margin-top: 40px;
+    }
+
+    &__number::before {
+      margin-bottom: 36px;
     }
 
     &__item {
-     padding-right: 20px;
+      padding-right: 20px;
     }
 
     &__item:not(:last-child) {
@@ -80,7 +88,30 @@
     }
 
     &__text {
+      font-size: 14px;
+      line-height: 1.714;
       margin-bottom: 0px;
+      margin-top: 13px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages {
+    &__number {
+      font-size: 58px;
+      line-height: 1.138;
+      margin-top: 44px;
+    }
+
+    &__number::before {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.75;
+      margin-top: 15px;
     }
   }
 }
