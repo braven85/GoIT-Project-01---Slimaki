@@ -996,6 +996,34 @@ a {
   color: #000000;
 }
 
+.advantages {
+  background-color: #fff5f6;
+}
+
+.advantages__title {
+  visibility: hidden;
+}
+
+.advantages__number {
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.advantages__text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+  color: #000000;
+}
+
 .gallery {
   padding-top: 97px;
   padding-bottom: 80px;
