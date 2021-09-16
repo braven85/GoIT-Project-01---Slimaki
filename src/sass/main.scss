@@ -10,4 +10,12 @@
 @import './base/common';
 @import './base/container';
 
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/gallery';
 @import './layout/reviews';
+@import './layout/shops';
+@import './layout/footer';
+
+@import './components/button';
