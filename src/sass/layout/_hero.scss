@@ -2,6 +2,7 @@
   height: 446px;
   background-color: #ffb8ca;
   position: relative;
+  display: flex;
 }
 
 .hero__milk {
@@ -25,15 +26,25 @@
   border-radius: 20px;
   z-index: 20;
   bottom: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__button-products {
   width: 61.2px;
   height: 24px;
   background-color: $secondary-font-color;
-  padding-bottom: 11px;
   position: absolute;
-  right: 237.6px;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 160px;
+  margin-left: -120px;
+}
+
+.hero__button-products:hover,
+.hero__button-products:focus {
+  background-color: #c7133e;
 }
 
 .hero__button-link-products {
@@ -45,10 +56,17 @@
 .hero__button-how {
   width: 82.8px;
   height: 24px;
-  padding-bottom: 11px;
   background-color: $main-font-color;
   position: absolute;
-  right: 146.8px;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 160px;
+  margin-left: -50px;
+}
+
+.hero__button-how:hover,
+.hero__button-how:focus {
+  background-color: #ecebeb;
 }
 
 .hero__button-link-how {
@@ -62,8 +80,10 @@
   font-weight: 400;
   z-index: 20;
   position: absolute;
-  right: 82px;
-  bottom: 203px;
+  left: 50%;
+  bottom: 0;
+  margin-left: -120px;
+  margin-bottom: 203px;
 }
 
 .hero__title1 {
@@ -83,32 +103,27 @@
 }
 
 .hero__ice-cream-circle {
-  width: 344px;
-  height: 344px;
-  border-radius: 50%;
-  background-color: $header-circle-color;
   position: absolute;
-  right: -62px;
+  right: 0;
   bottom: 75px;
 }
 
 .hero__ice-cream-photo {
   z-index: 10;
   position: absolute;
-  right: 32px;
   bottom: 0;
+  right: 32px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero__container {
-    height: 320px;
+    height: 312px;
     display: flex;
     justify-content: space-between;
   }
 
   .hero__title {
-    left: 34px;
-    top: 15px;
+    left: 155px;
   }
 
   .hero__title1 {
@@ -121,11 +136,11 @@
   }
 
   .hero__button-products {
-    left: 34px;
+    left: 155px;
   }
 
   .hero__button-how {
-    left: 104.4px;
+    left: 152px;
   }
 
   .hero__milk {
@@ -134,11 +149,18 @@
     bottom: 28px;
   }
 
+  .hero__circle {
+    display: none;
+  }
+
   .hero__ice-cream-circle {
+    right: 142px;
+    bottom: 46px;
     height: 324px;
     width: 322px;
-    top: -38px;
-    right: 137px;
+    border-radius: 50%;
+    background-color: $header-circle-color;
+    position: absolute;
   }
 
   .hero__ice-cream-photo {
@@ -164,6 +186,7 @@
     position: absolute;
     left: 154px;
     top: 260px;
+    background-color: $main-font-color;
   }
 
   .hero__right-side {
@@ -177,7 +200,6 @@
     color: $main-font-color;
     position: absolute;
     right: 42px;
-
   }
 
   .hero__number {
@@ -186,22 +208,240 @@
     line-height: 32px;
     text-align: right;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: $secondary-font-color;
     z-index: 30;
-    
-  
     margin-bottom: 24px;
   }
 
   .circle {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: $main-font-color;
-     margin-top: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $main-font-color;
+    margin-top: 12px;
+  }
+
+  .dot1 {
+    position: absolute;
+    top: 12px;
+    right: 34px;
+  }
+
+  .number1 {
+    position: absolute;
+    top: 26px;
+    right: 43px;
+  }
+
+  .text1 {
+    position: absolute;
+    top: 58px;
+    right: 44px;
+  }
+
+  .dot2 {
+    position: absolute;
+    top: 69px;
+    right: 34px;
+  }
+
+  .number2 {
+    position: absolute;
+    top: 82px;
+    right: 42px;
+  }
+
+  .text2 {
+    position: absolute;
+    top: 115px;
+    right: 42px;
+  }
+
+  .hero__button-icon {
+    fill: $secondary-font-color;
+    width: 6px;
+    height: 6px;
+    display: flex;
+  }
+
+  .hero__lady {
+    position: absolute;
+    top: 184px;
+    right: 34px;
+  }
 }
 
-.hero__button-icon {
-}
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    height: 578px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero__title {
+    top: 84px;
+    left: 115px;
+    margin-left: 0;
+  }
+
+  .hero__title1 {
+    font-size: 38px;
+    line-height: 25px;
+    line-height: 43.51px;
+  }
+
+  .hero__title2 {
+    font-size: 58px;
+    line-height: 52.49px;
+  }
+
+  .hero__button {
+    margin-left: 0;
+    margin-bottom: 0;
+    bottom: 292px;
+    height: 40px;
+  }
+
+  .hero__button-products {
+    left: 115px;
+    width: 104px;
+  }
+
+  .hero__button-link-products,
+  .hero__button-link-how {
+    font-size: 14px;
+  }
+
+  .hero__button-how {
+    width: 138px;
+    left: 234px;
+  }
+
+  .hero__milk {
+    display: block;
+    position: absolute;
+    bottom: 45px;
+    left: 77px;
+  }
+
+  .hero__circle {
+    display: none;
+  }
+
+  .hero__ice-cream-circle {
+    height: 538px;
+    width: 538px;
+    left: 465px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: $header-circle-color;
+    position: absolute;
+  }
+
+  .hero__text {
+    display: block;
+    font-size: 14px;
+    color: $main-font-color;
+    line-height: 140%;
+    position: absolute;
+    left: 295px;
+    bottom: 102px;
+  }
+
+  .hero__button-text {
+    display: block;
+    border-radius: 50%;
+    border: none;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 295px;
+    bottom: 56px;
+    background-color: $main-font-color;
+  }
+
+  .hero__button-icon {
+    fill: $secondary-font-color;
+    width: 10px;
+    height: 10px;
+  }
+
+  .hero__ice-cream-photo {
+    right: 405px;
+  }
+
+  .hero__right-side {
+    display: block;
+  }
+
+  .hero__list-text {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: $main-font-color;
+    position: absolute;
+    right: 42px;
+  }
+
+  .hero__number {
+    font-family: $secondary-font;
+    font-size: 46px;
+    line-height: 53px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-font-color;
+    z-index: 30;
+    margin-bottom: 38px;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $main-font-color;
+    margin-top: 74px;
+  }
+
+  .dot1 {
+    position: absolute;
+    top: 1px;
+    right: 97px;
+  }
+
+  .number1 {
+    position: absolute;
+    top: 78px;
+    right: 115px;
+  }
+
+  .text1 {
+    position: absolute;
+    top: 133px;
+    right: 115px;
+  }
+
+  .dot2 {
+    position: absolute;
+    top: 93px;
+    right: 97px;
+  }
+
+  .number2 {
+    position: absolute;
+    top: 169px;
+    right: 115px;
+  }
+
+  .text2 {
+    position: absolute;
+    top: 224px;
+    right: 115px;
+  }
+
+  .hero__lady {
+    position: absolute;
+    bottom: 0px;
+    right: 109px;
+  }
 }

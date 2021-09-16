@@ -1,5 +1,5 @@
 .header__container {
-  background: $main-background-color;
+  background-color: $main-background-color;
 }
 
 .navigation__button-tablet {
@@ -8,7 +8,7 @@
 
 .navbar {
   font-family: var(--main-font);
-  width: 100%;
+  width: 250px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 40;
+  z-index: 50;
 }
 
 .line {
@@ -63,18 +63,26 @@
   line-height: 21px;
   border-radius: 22px;
   margin-top: 60px;
-  width: 100%;
+  width: 186px;
   height: 44px;
   text-align: center;
   margin-bottom: 34px;
+  background-color: $main-font-color;
 }
 
-.navigatio__button-div {
-  padding: 0 20px;
+.navigation__button:hover,
+.navigation__button:focus {
+  background-color: #ecebeb;
+}
+
+.navigation__button-div {
+  display: flex;
+  justify-content: center;
 }
 
 .navigation__button-icon {
   margin-left: 15.77px;
+  stroke: $secondary-font-color;
 }
 
 .navigation__link {
@@ -102,9 +110,9 @@
   padding-top: 6px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .header__container {
-    padding-top: 37px;
+    padding-top: 38px;
     display: flex;
     justify-content: space-between;
   }
@@ -120,6 +128,11 @@
     width: 160px;
     height: 44px;
     text-align: center;
+    background-color: $main-font-color;
+  }
+  .navigation__button-tablet:hover,
+  .navigation__button-tablet:focus {
+    background-color: #ecebeb;
   }
 
   .hamburger-menu {
@@ -133,6 +146,80 @@
     align-items: center;
   }
 
+  .navbar {
+    width: 254px;
+    z-index: 40;
+  }
 
-  
+  .hamburger-menu--opened {
+    transform: translateX(200px) translateY(-30px);
+  }
+
+  .logo {
+    padding-top: 0;
+  }
+
+  .navigation__link {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+.header__container {
+  padding-top: 37px;
+  padding-left: 46px;
+  padding-right: 115px;
+  display: flex;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.logo {
+  padding-top: 0;
+  margin-right: 110px;
+}
+
+.navbar {
+  position: static;
+  transition: 0;
+  background: none;
+  width: 100%;
+}
+
+.navigation {
+ display: flex;
+ flex-direction: row-reverse;
+
+}
+
+.navigation__list {
+  display: flex;
+  margin-right: 110px;
+  gap: 35px;
+}
+
+ .navigation__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 0;
+  }
+
+.navigation__button {
+  margin-bottom: 0;
+    margin-top: 0;
+    width: 160px;
+}
+
+.navigation__item { 
+  border: none;
+}
+
+.navigation__item:nth-child(5) {
+  border: none;
+}
+
+
 }
