@@ -160,7 +160,7 @@
   @media screen and (min-width: 1280px) {
     margin-bottom: 10px;
     font-size: 16px;
-    
+
   }
 }
 
@@ -281,7 +281,7 @@
 }
 
 .button {
-  
+
   font-family:$main-font ;
   font-style: normal;
   font-weight:700;
@@ -294,7 +294,8 @@
   padding-right: 17px;
   border: 1px solid #ffffff;
   border-radius: 22px;
-  
+  cursor: pointer;
+
   @media screen and (min-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -329,7 +330,7 @@
 
 }
 
-.button--light{  
+.button--light{
   color: $secondary-font-color;
   background: $main-font-color;
   border: 1px solid #ffffff;
