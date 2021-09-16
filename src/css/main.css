@@ -336,6 +336,10 @@ a {
   display: block;
 }
 
+.products .container {
+  display: block;
+}
+
 .header__container {
   background-color: #ffb8ca;
 }
@@ -2117,6 +2121,225 @@ a {
   .footer-copyright {
     padding-top: 29px;
     padding-bottom: 18px;
+  }
+}
+
+.products {
+  margin-bottom: 98px;
+}
+
+.products__title {
+  width: 200px;
+  height: 72px;
+  margin-top: 121px;
+  margin-bottom: 31px;
+  display: column;
+}
+
+.products__title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.products__title-main {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+  color: #ffa5ba;
+  text-transform: uppercase;
+}
+
+.products__title-secondary {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Titan One", cursive;
+  font-size: 34px;
+  line-height: 1.145;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+
+.products__list {
+  display: block;
+}
+
+.products__list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.products__list-item {
+  width: 280px;
+  height: 598px;
+  display: block;
+}
+
+.products__list-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.products__picture {
+  width: 249px;
+  height: 252px;
+  margin-bottom: -139px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products__description-container {
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+  display: block;
+  margin: 0 auto;
+}
+
+.products__description-title {
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.145;
+  letter-spacing: 0.04em;
+  text-align: center;
+  width: 174px;
+  height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  padding-top: 161px;
+}
+
+.products__description-dots {
+  width: 26px;
+  height: 6px;
+  margin: 50px auto 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__description-dot {
+  width: 6px;
+  height: 6px;
+  fill: #ffffff;
+}
+
+.products__description-recipe {
+  width: 200px;
+  height: 124px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.products__description-link {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.products__first {
+  background-color: #ffb8ca;
+}
+
+.products__second {
+  background-color: #f0d1a5;
+}
+
+.products__third {
+  background-color: #c2e297;
+}
+
+@media screen and (min-width: 768px) {
+  .products__title {
+    width: 283px;
+    height: 100px;
+    margin-bottom: 39px;
+  }
+  .products__title-main {
+    font-size: 26px;
+  }
+  .products__title-secondary {
+    font-size: 48px;
+  }
+  .products__list {
+    display: flex;
+  }
+  .products__list-item {
+    width: 220px;
+  }
+  .products__list-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .products__description-container {
+    width: 220px;
+    height: 485px;
+  }
+  .products__picture {
+    width: 220px;
+    height: 226px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products__title {
+    width: 350px;
+    height: 115px;
+    margin-bottom: 49px;
+  }
+  .products__title-main {
+    font-size: 30px;
+  }
+  .products__title-secondary {
+    font-size: 58px;
+  }
+  .products__list {
+    display: flex;
+  }
+  .products__list-item {
+    width: 335px;
+    height: 735px;
+  }
+  .products__list-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .products__description-container {
+    width: 329px;
+    height: 525px;
+  }
+  .products__description-title {
+    font-size: 30px;
+    height: 34px;
+    letter-spacing: 0.03em;
+  }
+  .products__description-dots {
+    margin-top: 70px;
+  }
+  .products__description-recipe {
+    width: 241px;
+    height: 106px;
+    font-size: 16px;
+    overflow: hidden;
+    line-height: 1.76;
+    margin-bottom: 62px;
+  }
+  .products__picture {
+    width: 335px;
+    height: 335px;
+  }
+  .products__second-title {
+    width: 181px;
+  }
+  .products__third-title {
+    width: 209px;
   }
 }
 
