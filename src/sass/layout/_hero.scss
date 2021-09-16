@@ -5,6 +5,10 @@
   display: flex;
 }
 
+.hero {
+  background-color: #ffb8ca;
+}
+
 .hero__milk {
   display: none;
 }
@@ -45,6 +49,7 @@
 .hero__button-products:hover,
 .hero__button-products:focus {
   background-color: #c7133e;
+  cursor: pointer;
 }
 
 .hero__button-link-products {
@@ -67,6 +72,7 @@
 .hero__button-how:hover,
 .hero__button-how:focus {
   background-color: #ecebeb;
+  cursor: pointer;
 }
 
 .hero__button-link-how {
