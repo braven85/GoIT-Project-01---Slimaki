@@ -2,6 +2,10 @@
   background-color: $main-background-color;
 }
 
+.header {
+  background-color: #ffb8ca;
+}
+
 .navigation__button-tablet {
   display: none;
 }
@@ -73,6 +77,7 @@
 .navigation__button:hover,
 .navigation__button:focus {
   background-color: #ecebeb;
+  cursor: pointer;
 }
 
 .navigation__button-div {
