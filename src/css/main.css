@@ -1337,7 +1337,10 @@ a {
   .shops {
     padding-bottom: 85px;
     min-height: 693px;
-    background-image: url(../images/Shops/shops.jpg);
+    max-height: 700px;
+    background-image: url(../images/Shops/shops.png);
+    background-color: #fff5f6;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -1345,13 +1348,15 @@ a {
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .shops {
-    background-image: url(../images/Shops/shops@2x.jpg);
+    background-image: url(../images/Shops/shops@2x.png);
+    max-height: 700px;
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (min-resolution: 288dpi), screen and (min-width: 1280px) and (min-resolution: 3dppx) {
   .shops {
-    background-image: url(../images/Shops/shops@3x.jpg);
+    background-image: url(../images/Shops/shops@3x.png);
+    max-height: 700px;
   }
 }
 
@@ -1681,12 +1686,18 @@ a {
 }
 
 .button {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
   height: 44px;
   padding-left: 17px;
   padding-right: 17px;
   border: 1px solid #ffffff;
   border-radius: 22px;
-  line-height: 1.31;
 }
 
 @media screen and (min-width: 768px) {
@@ -1703,24 +1714,51 @@ a {
   }
 }
 
-.button {
-  color: #d41443;
-  background-color: #ffffff;
-  border-color: none;
-}
-
-.arrow {
+.arrow--light {
   stroke: #d41443;
 }
 
-.button:hover,
-.button:focus {
-  background-color: #d41443;
-  color: #ffffff;
+.arrow--dark {
+  stroke: #ffffff;
 }
 
-.button:hover + .arrow:focus {
-  stroke: #ffffff;
+.button--dark {
+  color: #ffffff;
+  background: #d41443;
+  border: 1px solid #d41443;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .button--dark {
+    margin-right: 14.5px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .button--dark {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.button--light {
+  color: #d41443;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.button--dark:hover,
+.button--dark:focus {
+  background: #C7133E;
+  border: 1px solid #C7133E;
+}
+
+.button--light:hover,
+.button--light:focus {
+  background: #ECEBEB;
+  border: 1px solid #ECEBEB;
 }
 
 .container--backgroud-color {
