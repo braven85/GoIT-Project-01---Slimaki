@@ -19,6 +19,12 @@
       margin-left: 14px;
       margin-bottom: -2px;
     }
+
+    &:hover,
+    &:focus {
+      background-color: $button-hover;
+      cursor: pointer;
+    }
   }
 
   @media screen and(min-width: 768px) {
@@ -45,17 +51,6 @@
 
       &__icon {
         top: 39%;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: $secondary-font-color;
-        color: $main-font-color;
-        cursor: pointer;
-      }
-
-      &:hover + &__icon:hover {
-        stroke: $main-font-color;
       }
     }
   }

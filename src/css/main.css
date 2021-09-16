@@ -786,6 +786,9 @@ a {
   .about__text {
     margin-left: 74px;
   }
+  .about__text--distinction {
+    margin-top: 56px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
@@ -1803,6 +1806,11 @@ a {
   margin-bottom: -2px;
 }
 
+.btn-light:hover, .btn-light:focus {
+  background-color: #ECEBEB;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .btn-light {
     font-size: 16px;
@@ -1826,14 +1834,6 @@ a {
   }
   .btn-light__icon {
     top: 39%;
-  }
-  .btn-light:hover, .btn-light:focus {
-    background-color: #d41443;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  .btn-light:hover + .btn-light__icon:hover {
-    stroke: #ffffff;
   }
 }
 /*# sourceMappingURL=main.css.map */
