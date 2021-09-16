@@ -129,6 +129,11 @@
       fill: $reviews-dot-color;
     }
 
+    &-icon:focus,
+    &-icon:hover {
+      fill: $reviewers-home;
+    }
+
     &-container {
       display: flex;
       justify-content: center;
@@ -157,8 +162,9 @@
       }
       &-lines {
         min-width: 524px;
+        height: 60px;
         position: relative;
-        top: 90px;
+        top: 14px;
         left: -265px;
       }
     }
@@ -224,7 +230,7 @@
       &-lines {
         min-width: 810px;
         position: relative;
-        top: 105px;
+        top: 24px;
         left: -405px;
       }
     }
