@@ -1,0 +1,235 @@
+.products {
+  margin-bottom: 98px;
+
+  &__title {
+    width: 200px;
+    height: 72px;
+    margin-top: 121px;
+    margin-bottom: 31px;
+    display: column;
+
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-main {
+      margin-bottom: 15px;
+      text-align: center;
+      font-family: $secondary-font;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.145;
+      color: $header-circle-color;
+      text-transform: uppercase;
+    }
+
+    &-secondary {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $secondary-font;
+      font-size: 34px;
+      line-height: 1.145;
+      letter-spacing: 0.04em;
+      color: $secondary-font-color;
+    }
+  }
+
+  &__list {
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    display: block;
+
+    &-item {
+      width: 280px;
+      height: 598px;
+      display: block;
+    }
+
+    &-item:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__picture {
+    width: 249px;
+    height: 252px;
+    margin-bottom: -139px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__description {
+    &-container {
+      width: 280px;
+      height: 485px;
+      border-radius: 24px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &-title {
+      font-family: $secondary-font;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.145;
+      letter-spacing: 0.04em;
+      text-align: center;
+      width: 174px;
+      height: 23px;
+      text-transform: uppercase;
+      color: $main-font-color;
+      margin: 0 auto;
+      padding-top: 161px;
+    }
+
+    &-dots {
+      width: 26px;
+      height: 6px;
+      margin: 50px auto 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-dot {
+      width: 6px;
+      height: 6px;
+      fill: $main-font-color;
+    }
+
+    &-recipe {
+      width: 200px;
+      height: 124px;
+      margin: 0 auto 30px;
+      text-align: center;
+      font-family: $main-font;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.52;
+      letter-spacing: 0.04em;
+      color: $main-font-color;
+    }
+
+    &-link {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+    }
+  }
+
+  &__first {
+    background-color: $main-background-color;
+  }
+
+  &__second {
+    background-color: $products-secondary-background;
+  }
+
+  &__third {
+    background-color: $products-third-background;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    &__title {
+      width: 283px;
+      height: 100px;
+      margin-bottom: 39px;
+      &-main {
+        font-size: 26px;
+      }
+      &-secondary {
+        font-size: 48px;
+      }
+    }
+    &__list {
+      display: flex;
+      &-item {
+        width: 220px;
+      }
+      &-item:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    }
+
+    &__description {
+      &-container {
+        width: 220px;
+        height: 485px;
+      }
+    }
+
+    &__picture {
+      width: 220px;
+      height: 226px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products {
+    &__title {
+      width: 350px;
+      height: 115px;
+      margin-bottom: 49px;
+      &-main {
+        font-size: 30px;
+      }
+      &-secondary {
+        font-size: 58px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      &-item {
+        width: 335px;
+        height: 735px;
+      }
+      &-item:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+
+    &__description {
+      &-container {
+        width: 329px;
+        height: 525px;
+      }
+      &-title {
+        font-size: 30px;
+        height: 34px;
+        letter-spacing: 0.03em;
+      }
+      &-dots {
+        margin-top: 70px;
+      }
+      &-recipe {
+        width: 241px;
+        height: 106px;
+        font-size: 16px;
+        overflow: hidden;
+        line-height: 1.76;
+        margin-bottom: 62px;
+      }
+    }
+
+    &__picture {
+      width: 335px;
+      height: 335px;
+    }
+
+    &__second-title {
+      width: 181px;
+    }
+
+    &__third-title {
+      width: 209px;
+    }
+  }
+}
